@@ -11,7 +11,7 @@ services:
     ports:
       - 8601:8601
     volumes:
-      - ./:/app
+      - /home/jorge/scratch-elimu:/app
     working_dir: /app/scratch-gui
     command: >
       sh -c "npm install --force && 

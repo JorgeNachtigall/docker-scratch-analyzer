@@ -11,10 +11,9 @@ services:
     ports:
       - 8601:8601
     volumes:
-      - /home/jorge/scratch-elimu:/app
+      - ./:/app
     working_dir: /app/scratch-gui
     command: >
-      sh -c "npm install --force && 
-             npm start"
+      sh -c "npm install --force"
     profiles:
       - scratch_gui

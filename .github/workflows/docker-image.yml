@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image to scratch project
-      run: cp -rf ./../Dockerfile . && cp -rf ./../docker-compose.yml . docker-compose --profile scratch_gui up
+      run: cp -rf ./github/Dockerfile . && cp -rf ./github/docker-compose.yml . docker-compose --profile scratch_gui up

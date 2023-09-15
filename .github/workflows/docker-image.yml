@@ -15,4 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image to scratch project
-      run: docker-compose --profile scratch_gui up
+      run: |
+        cd /
+        docker-compose --profile scratch_gui up
